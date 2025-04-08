@@ -13,16 +13,13 @@ namespace TestAutomationBDD_OrangeApp.StepDefinitions
         [Given(@"I am logged in as an admin")]
         public void GivenIAmLoggedInAsAnAdmin()
         {
-            _driver.Navigate().GoToUrl("https://opensource-demo.orangehrmlive.com/");
-            
             _loginPage.Login("Admin", "admin123");
         }
 
         [When(@"I navigate to Job Titles Page")]
         public void WhenINavigateToJobTitlesPage()
         {
-            _driver.Navigate().GoToUrl("https://opensource-demo.orangehrmlive.com/index.php/admin/viewJobTitleList");
-            JobTitilePage jobTitilePage = new JobTitilePage(_driver);
+           
         }
 
         [When(@"I add a new job title ""(.*)"" with description ""(.*)"" and note ""(.*)""")]

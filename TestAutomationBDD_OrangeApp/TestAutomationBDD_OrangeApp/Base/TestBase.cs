@@ -14,7 +14,7 @@ namespace TestAutomationBDD_OrangeApp.Base
     {
         protected IWebDriver _driver;
         protected LoginPage _loginPage => new LoginPage(_driver);
-        protected AdminPage _adminPage => => new AdminPage(_driver);
+        protected AdminPage _adminPage => new AdminPage(_driver);
         protected JobTitilePage _jobTitilePage => new JobTitilePage(_driver);
 
        
@@ -22,6 +22,7 @@ namespace TestAutomationBDD_OrangeApp.Base
         {
             _driver = new ChromeDriver();
             _driver.Manage().Window.Maximize();
+            _driver.Navigate().GoToUrl("https://opensource-demo.orangehrmlive.com/");
         }
 
         [AfterScenario]

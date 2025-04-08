@@ -11,7 +11,7 @@ namespace TestAutomationBDD_OrangeApp.Pages
         private By jobSpecificationField = By.XPath("//div[@class='oxd-file-button']");
         private By noteField = By.XPath("//textarea[@placeholder='Add note']");
         private By saveButton = By.XPath("//button[@type='submit']");
-        private By successMessage = By.XPath("");
+        private By successMessage = By.XPath("//div[@id='oxd-toaster_1']");
 
         public JobTitilePage(IWebDriver driver)
         {
