@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAutomationBDD_OrangeApp", "TestAutomationBDD_OrangeApp\TestAutomationBDD_OrangeApp.csproj", "{F723CDCD-9C80-4A4A-A9B4-2FC31AD5617C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F723CDCD-9C80-4A4A-A9B4-2FC31AD5617C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F723CDCD-9C80-4A4A-A9B4-2FC31AD5617C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F723CDCD-9C80-4A4A-A9B4-2FC31AD5617C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F723CDCD-9C80-4A4A-A9B4-2FC31AD5617C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3BE5EF68-8D14-430A-8D0D-31E30E77E397}
+	EndGlobalSection
+EndGlobal
