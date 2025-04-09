@@ -1,9 +1,7 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
-using TechTalk.SpecFlow;
+using Reqnroll;
 using TestAutomationBDD_OrangeApp.Base;
-using TestAutomationBDD_OrangeApp.Pages;
 
 namespace TestAutomationBDD_OrangeApp.StepDefinitions
 {
@@ -16,13 +14,13 @@ namespace TestAutomationBDD_OrangeApp.StepDefinitions
             _loginPage.Login("Admin", "admin123");
         }
 
-        [When(@"I navigate to Job Titles Page")]
-        public void WhenINavigateToJobTitlesPage()
+        [When(@"I navigate to '(.*)' Page")]
+        public void WhenINavigateToJobTitlesPage(string menuItemName)
         {
-           
+           _menuPanel.NavigateTo(menuItemName);
         }
 
-        [When(@"I add a new job title ""(.*)"" with description ""(.*)"" and note ""(.*)""")]
+        [When(@"I add a new job title '(.*)' with description '(.*)' and note '(.*)'")]
         public void WhenIAddANewJobTitleWithDescriptionAndNote(string jobTitle, string jobDescription, string note)
         {
             _jobTitilePage.AddJobTitle(jobTitle, jobDescription, note);
@@ -37,7 +35,7 @@ namespace TestAutomationBDD_OrangeApp.StepDefinitions
         [Then(@"The job title should appear in the job titles list")]
         public void ThenTheJobTitleShouldAppearInTheJobTitlesList(string title)
         {
-            var jobTitles = _driver.FindElements(By.XPath("//table[@id='resultTable']/tbody/tr/td[2]"));
+            var jobTitles = _driver.FindElements(By.XPath("//"));
             bool jobTitleExists = 
                 jobTitles.Any(jobTitle => jobTitle.Text.Equals(title));
             Assert.That(jobTitleExists, $"The job title '{title}' was not found.");

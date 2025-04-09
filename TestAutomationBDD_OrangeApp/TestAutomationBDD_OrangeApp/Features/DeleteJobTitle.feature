@@ -1,6 +1,5 @@
 ﻿Feature: DeleteJobTitle
 
-A short summary of the feature
 Precondition: Add new job title
 
 @tag1

@@ -1,10 +1,10 @@
 ﻿using OpenQA.Selenium;
+using TestAutomationBDD_OrangeApp.Base;
 
 namespace TestAutomationBDD_OrangeApp.Pages
 {
-    public class JobTitilePage
+    public class JobTitilePage : TestBase
     {
-        private readonly IWebDriver _driver;
         private By addJobTitleButton = By.XPath("//button[@class='oxd-button oxd-button--medium oxd-button--secondary']");
         private By jobTitleField = By.XPath("///div/input[@class='oxd-input oxd-input--active']");
         private By jobDescriptionField = By.XPath("//textarea[@placeholder='Type description here']");

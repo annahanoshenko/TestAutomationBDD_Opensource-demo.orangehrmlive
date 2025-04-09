@@ -1,11 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TechTalk.SpecFlow;
+using Reqnroll;
 using TestAutomationBDD_OrangeApp.Pages;
 
 namespace TestAutomationBDD_OrangeApp.Base
@@ -16,8 +11,9 @@ namespace TestAutomationBDD_OrangeApp.Base
         protected LoginPage _loginPage => new LoginPage(_driver);
         protected AdminPage _adminPage => new AdminPage(_driver);
         protected JobTitilePage _jobTitilePage => new JobTitilePage(_driver);
+        protected MenuPanel _menuPanel => new MenuPanel(_driver);
 
-       
+        [BeforeScenario]
         public void Setup()
         {
             _driver = new ChromeDriver();

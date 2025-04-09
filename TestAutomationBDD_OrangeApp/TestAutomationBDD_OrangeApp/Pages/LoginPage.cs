@@ -1,10 +1,10 @@
 ﻿using OpenQA.Selenium;
+using TestAutomationBDD_OrangeApp.Base;
 
 namespace TestAutomationBDD_OrangeApp.Pages
 {
-    public class LoginPage
+    public class LoginPage : TestBase
     {
-        private readonly IWebDriver _driver;
         private By usernameField = By.XPath("//input[@class='oxd-input oxd-input--active']");
         private By passwordField = By.XPath("//input[@type='password']");
         private By loginButton = By.XPath("//button[@type='submit']");

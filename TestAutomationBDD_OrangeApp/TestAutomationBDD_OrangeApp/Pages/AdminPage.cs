@@ -1,20 +1,13 @@
 ﻿using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using TestAutomationBDD_OrangeApp.Base;
 
 namespace TestAutomationBDD_OrangeApp.Pages
 {
-    public class AdminPage
+    public class AdminPage : TestBase
     {
-        private readonly IWebDriver _driver;
         private By adminButton = By.XPath("//span[text()='Admin']");
         private By jobButton = By.XPath("//span[text()='Job ']");
         private By jobTitleButton = By.XPath("//a[text()='Job Titles']"); 
-
-       
 
         public AdminPage(IWebDriver driver)
         {
